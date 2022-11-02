@@ -6,7 +6,7 @@ export default function Incidence() {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <Image  source={require('../img/Clock.svg')} style={styles.image}/>
+          <Image style={styles.image}/>
           <Text style={styles.headertext}>08:05 am</Text>
         </View>
         <View style={styles.pp}>

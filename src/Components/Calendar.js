@@ -4,7 +4,7 @@ import React from 'react'
 const Calendar = () => {
   return (
     <View style={styles.fondo}>
-    
+      <Image style={styles.image}/>
     </View>
   )
 }
