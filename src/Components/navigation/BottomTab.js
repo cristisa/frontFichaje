@@ -1,8 +1,9 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import About from '../About';
-import Home from '../Home';
-import {FontAwesome} from 'react-native-vector-icons/FontAwesome'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from '../Pages/Home';
+import Calendar from '../Calendar';
+import Icon from '@expo/vector-icons/Ionicons'
+import Incidence from '../Incidence';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,16 +15,26 @@ const BottomTab = () => {
             tabBarActiveTintColor:'#fff',
             tabBarInactiveTintColor: '#fff',
             headerShown: false,
+            tabBarShowLabel: false,
+            tabBarIcon: ({ focused, color, size }) => {
+                let iconName = '';
+                switch ( route.name ) {
+                    case 'Clock':
+                        iconName = focused ? 'time' : 'time';
+                        break;
+                    case 'Home':
+                        iconName = focused ? 'home' : 'home';
+                        break;
+                    case 'Calendar':
+                        iconName = focused ? 'calendar' : 'calendar';
+                        break;
+                }
+                return <Icon name={ iconName } size ={ size } color={ color }/>
+            }
         })}>
-            <Tab.Screen name='Home' component={Home} 
-            // options={{
-            //     tabBarLabel: 'Clock',
-            //     tabBarIcon: ({ color, size }) => (
-            //         <FontAwesome name='fa-clock-o ' color={color} size={size} />
-            //     ),
-            // }}
-            />
-            <Tab.Screen name='About' component={About} />
+            <Tab.Screen name='Clock' component={Incidence} />
+            <Tab.Screen name='Home' component={Home} />
+            <Tab.Screen name='Calendar' component={Calendar} />
         </Tab.Navigator>
     )
 }
