@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import BottomTab from './src/components/navigation/BottomTab';
-import ItemTable from './src/components/ItemTable';
+import BottomTab from './src/Components/navigation/BottomTab';
+import ItemTable from './src/Components/ItemTable';
 
 const Drawer = createDrawerNavigator();
 
