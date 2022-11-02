@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet, Alert } from 'react-native';
-import { AppButton } from '../components/AppButton';
+import { AppButton } from '../Components/AppButton';
 
 export const Item = ({item}) => {
     return (
