@@ -7,6 +7,11 @@ export const Item = ({item}) => {
             <Text style={{fontSize: 16}}>{item.key}</Text>
             <View style={{flex:1, flexDirection: 'row-reverse'}}>
                 <AppButton 
+                    onPress={() => Alert.alert('Asignar')}
+                    title='Asignar'
+                    styles={styles.btn1} 
+                />
+                <AppButton 
                     onPress={() => Alert.alert('Fichajes')}
                     title='Fichajes'
                     styles={styles.btn2} 
