@@ -2,6 +2,7 @@ import { FlatList, Text, View } from 'react-native';
 import * as React from 'react';
 import { Item } from '../components/Item';
 import { StylesApp } from '../styles/StylesApp';
+import BottomTab from './navigation/BottomTab';
 
 export default function ItemTable() {
   data=[
