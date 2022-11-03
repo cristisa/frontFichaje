@@ -1,20 +1,50 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function App() {
+import { Picker } from "@react-native-picker/picker";
+
+function App() {
+  const [country, setCountry] = useState('Unknown');
+
   return (
-    <View style={styles.container}>
-      <Text>Primer mensaje: Roxie!</Text>
-      <StatusBar style="auto" />
+    <View style={styles.screen}>
+      <Text style={styles.text}>KindaCode.com</Text>
+      <Picker
+        selectedValue={country}
+        onValueChange={(value, index) => setCountry(value)}
+        mode="dropdown" // Android only
+        style={styles.picker}
+      >
+        <Picker.Item label="Please select your country" value="Unknown" />
+        <Picker.Item label="Australia" value="Australia" />
+        <Picker.Item label="Belgium" value="Belgium" />
+        <Picker.Item label="Canada" value="Canada" />
+        <Picker.Item label="India" value="India" />
+        <Picker.Item label="Japan" value="Japan" />
+      </Picker>
+      <Text style={styles.text}>Your conuntry: {country}</Text>
     </View>
   );
 }
 
+export default App;
+
+// Just some styles
 const styles = StyleSheet.create({
-  container: {
+  screen: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: 'yellow'
+  },
+  text: {
+    fontSize: 24,
+  },
+  picker: {
+    marginVertical: 30,
+    width: 300,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: "#666",
   },
 });
