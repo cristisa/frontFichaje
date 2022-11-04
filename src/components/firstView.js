@@ -1,5 +1,4 @@
 import React from 'react'
-import Constants from 'expo-constants'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../assets/logo.png'
