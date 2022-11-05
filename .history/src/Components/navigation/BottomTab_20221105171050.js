@@ -4,7 +4,6 @@ import Home from '../Pages/Home';
 import Calendar from '../Calendar';
 import Icon from '@expo/vector-icons/Ionicons'
 import Incidence from '../Incidence';
-import {Colors} from '../../styles/Colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -12,9 +11,9 @@ const BottomTab = () => {
     return (
         <Tab.Navigator
         screenOptions = { ({ route }) => ({
-            tabBarStyle: { backgroundColor: Colors.orangebg },
-            tabBarActiveTintColor: Colors.white,
-            tabBarInactiveTintColor: Colors.white,
+            tabBarStyle: { backgroundColor: '#EB5629' },
+            tabBarActiveTintColor:'#fff',
+            tabBarInactiveTintColor: '#fff',
             headerShown: false,
             tabBarShowLabel: false,
             tabBarIcon: ({ focused, color, size }) => {

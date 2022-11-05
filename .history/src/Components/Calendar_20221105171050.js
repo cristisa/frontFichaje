@@ -1,6 +1,5 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
-import { Colors } from '.././styles/Colors'
 
 const Calendar = () => {
   return (
@@ -12,7 +11,7 @@ const Calendar = () => {
 
 const styles = StyleSheet.create({
   fondo:{
-    backgroundColor: Colors.orangebg,
+    backgroundColor: '#EB5629',
     width: '100%',
     height: '100%',
   },

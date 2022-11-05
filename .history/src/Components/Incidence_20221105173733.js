@@ -60,7 +60,7 @@ export default function Incidence() {
       borderRadius: 25,
     },
     containercomment:{
-      color: Colors.white,
+      color: '#fff',
       marginTop: 25,
       width: '80%',
     },

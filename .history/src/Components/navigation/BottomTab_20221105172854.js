@@ -4,7 +4,7 @@ import Home from '../Pages/Home';
 import Calendar from '../Calendar';
 import Icon from '@expo/vector-icons/Ionicons'
 import Incidence from '../Incidence';
-import {Colors} from '../../styles/Colors';
+import {Colors} from '../..styles/Colors';
 
 const Tab = createBottomTabNavigator();
 
