@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet, Image, TextInput, Alert } from 'react-native';
 import { AppButton } from "./AppButton";
-import { Colors } from '.././styles/Colors';
 
 export default function Incidence() {
     return (
@@ -23,7 +22,7 @@ export default function Incidence() {
             onPress={() => Alert.alert('Comentario enviado.')}
             title='Enviar'
             styles={styles.btn}
-            color={Colors.white} />
+            color="#fff" />
         </View>
       </View>
     );
@@ -36,7 +35,7 @@ export default function Incidence() {
       height: '100%',
     },
     header: {
-      backgroundColor: Colors.orangebg,
+      backgroundColor: '#EB5629',
       height: '20%',
     },
     image:{
@@ -60,7 +59,7 @@ export default function Incidence() {
       borderRadius: 25,
     },
     containercomment:{
-      color: Colors.white,
+      color: '#fff',
       marginTop: 25,
       width: '80%',
     },

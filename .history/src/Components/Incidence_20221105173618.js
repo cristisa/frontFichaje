@@ -36,7 +36,7 @@ export default function Incidence() {
       height: '100%',
     },
     header: {
-      backgroundColor: Colors.orangebg,
+      backgroundColor: '#EB5629',
       height: '20%',
     },
     image:{
@@ -60,7 +60,7 @@ export default function Incidence() {
       borderRadius: 25,
     },
     containercomment:{
-      color: Colors.white,
+      color: '#fff',
       marginTop: 25,
       width: '80%',
     },

@@ -19,9 +19,8 @@ export default function App() {
         drawerInactiveTintColor: '#fff',
       }}>
         <Drawer.Screen
-          name="Inicio de Sesión"
-          component={Login}/>
-          <Drawer.Screen name="Incidencias" component={BottomTab} />
+          name="Incidencias"
+          component={BottomTab}/>
           <Drawer.Screen name="Item" component={ItemTable} />
       </Drawer.Navigator>
     </NavigationContainer>
