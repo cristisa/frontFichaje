@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import BottomTab from './src/Components/navigation/BottomTab';
 import ItemTable from './src/Components/ItemTable';
-import Login from './src/Components/Pages/Login';
+import { Login } from './src/Components/Pages/Login';
 
 const Drawer = createDrawerNavigator();
 
@@ -20,7 +20,7 @@ export default function App() {
       }}>
         <Drawer.Screen
           name="Login"
-          component= { Login }/>
+          component={Login}/>
           <Drawer.Screen name="Incidencias" component={BottomTab} />
           <Drawer.Screen name="Item" component={ItemTable} />
       </Drawer.Navigator>

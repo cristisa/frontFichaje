@@ -20,7 +20,7 @@ export default function App() {
       }}>
         <Drawer.Screen
           name="Login"
-          component= { Login }/>
+          component={L}/>
           <Drawer.Screen name="Incidencias" component={BottomTab} />
           <Drawer.Screen name="Item" component={ItemTable} />
       </Drawer.Navigator>
