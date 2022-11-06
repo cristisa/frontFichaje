@@ -6,7 +6,7 @@ import image from '../../../assets/logo.png';
 import { Colors } from '../../styles/Colors';
 
 
-export default function App() {
+export const Login = ({ navigation }) => {
 
     return (
     <View style={styles.container}>
@@ -31,7 +31,9 @@ export default function App() {
         onPress={()=> Alert.alert('Hola!')}
         style={styles.button}
         >
-        <Text style={styles.buttonText}>ENTRAR</Text>
+        <Text 
+        style={styles.buttonText} 
+        onPress={() => navigation.navigate("Home")}>ENTRAR</Text>
         </TouchableOpacity>
         
         <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>

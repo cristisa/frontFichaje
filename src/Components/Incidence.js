@@ -5,51 +5,50 @@ import { Colors } from '../styles/Colors';
 
 export default function Incidence() {
     return (
-      <View style={styles.container}>
-        <View style={styles.header}>
-          <Image style={styles.image}/>
-          <Text style={styles.headertext}>08:05 am</Text>
+      <View style={styles.container_incidence}>
+        <View style={styles.header_incidence}>
+          <Image style={styles.incidence_image}/>
+          <Text style={styles.incidence_headertext}>08:05 am</Text>
         </View>
-        <View style={styles.pp}>
-          <View style={styles.containercomment}>
-            <Text style={styles.comment}>Comentario</Text>
+        <View style={styles.incidence_box}>
+          <View style={styles.incidence_containercomment}>
+            <Text style={styles.incidence_comment}>Comentario</Text>
             <TextInput
               multiline={true}
               numberOfLines={10} 
-              style={styles.input}
+              style={styles.incidence_input}
             />
           </View>
             <AppButton 
             onPress={() => Alert.alert('Comentario enviado.')}
             title='Enviar'
-            styles={styles.btn}
-            color={Colors.white} />
+            styles={styles.incidence_btn}
+            />
         </View>
       </View>
     );
   }
 
   const styles = StyleSheet.create({
-    container:{
+    container_incidence:{
       backgroundColor: '#D9D9D9',
       width: '100%',
       height: '100%',
     },
-    header: {
+    header_incidence: {
       backgroundColor: Colors.orangebg,
       height: '20%',
     },
-    image:{
+    incidence_image:{
       width: 500,
     },
-    headertext: {
+    incidence_headertext: {
       textAlign: 'center',
       fontSize: 40,
-      marginTop: 10,
+      marginTop: 40,
       color: '#fff',
-      fontWeight: 'bold',
     },
-    pp:{
+    incidence_box:{
       backgroundColor: '#fff',
       width: '80%',
       height: '45%',
@@ -58,18 +57,27 @@ export default function Incidence() {
       marginLeft: 40,
       marginTop: 50,
       borderRadius: 25,
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 5,
+      },
+      shadowOpacity: 0.34,
+      shadowRadius: 6.27,
+
+      elevation: 10,
     },
-    containercomment:{
+    incidence_containercomment:{
       color: Colors.white,
       marginTop: 25,
       width: '80%',
     },
-    comment:{
+    incidence_comment:{
       fontSize: 18,
       marginBottom: 10,
       fontWeight: 'bold',
     },
-    input:{
+    incidence_input:{
       backgroundColor:'#EBEBEB',
       borderColor: '#ADADAD',
       borderWidth: 2,
@@ -77,9 +85,9 @@ export default function Incidence() {
       height: 80,
       textAlignVertical: 'top',
     },
-    btn: {
+    incidence_btn: {
       backgroundColor: '#5870F6',
-      color: 'red',
+      color: '#fff',
       borderRadius: 25,
       paddingTop: 12,
       paddingBottom: 12,
