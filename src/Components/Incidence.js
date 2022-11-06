@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet, Image, TextInput, Alert } from 'react-native';
 import { AppButton } from "./AppButton";
-import { Colors } from '.././styles/Colors';
+import { Colors } from '../styles/Colors';
 
 export default function Incidence() {
     return (
