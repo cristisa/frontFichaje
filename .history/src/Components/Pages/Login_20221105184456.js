@@ -1,5 +1,5 @@
 import React from 'react';
-import { useReduce, useEffect } from 'react';
+import {useReducer} from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
@@ -7,6 +7,9 @@ import { Colors } from '../../styles/Colors';
 
 
 export default function App() {
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+
 
     return (
     <View style={styles.container}>

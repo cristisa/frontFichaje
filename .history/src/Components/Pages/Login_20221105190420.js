@@ -5,8 +5,33 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } fro
 import image from '../../../assets/logo.png';
 import { Colors } from '../../styles/Colors';
 
+const initialState = {
+    valindando: true,
+    token: null,
+    username: '',
+    nombre: ''
+}
+
+const authReducer = ( state, action ) => {
+
+    switch (key) {
+        case '':
+            break;
+        default:
+            return state;
+    }
+}
+
 
 export default function App() {
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+
+    useEffect(() => {
+        setTimeout(() => {
+            dispatch({})
+        }, 1500);
+    }, []);
 
     return (
     <View style={styles.container}>

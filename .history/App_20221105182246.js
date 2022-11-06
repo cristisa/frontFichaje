@@ -4,7 +4,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import BottomTab from './src/Components/navigation/BottomTab';
 import ItemTable from './src/Components/ItemTable';
 import Login from './src/Components/Pages/Login';
-import { Colors } from './src/styles/Colors';
 
 
 const Drawer = createDrawerNavigator();
@@ -14,11 +13,11 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator
       screenOptions={{
-        drawerStyle: {backgroundColor: Colors.orangebg},
-        headerStyle: {backgroundColor: Colors.orangebg},
-        headerTintColor: Colors.white,
-        drawerActiveTintColor: Colors.white,
-        drawerInactiveTintColor: Colors.white,
+        drawerStyle: {backgroundColor: '#EB5629'},
+        headerStyle: {backgroundColor: '#EB5629'},
+        headerTintColor: '#fff',
+        drawerActiveTintColor: '#fff',
+        drawerInactiveTintColor: '#fff',
       }}>
         <Drawer.Screen
           name="Login"
