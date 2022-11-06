@@ -1,5 +1,4 @@
-import React from 'react';
-import { useReduce, useEffect } from 'react';
+import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
@@ -7,7 +6,6 @@ import { Colors } from '../../styles/Colors';
 
 
 export default function App() {
-
     return (
     <View style={styles.container}>
         <Image style= {styles.image}

@@ -4,7 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import BottomTab from './src/Components/navigation/BottomTab';
 import ItemTable from './src/Components/ItemTable';
 import Login from './src/Components/Pages/Login';
-import { Colors } from './src/styles/Colors';
+import { Colors } from '.././styles/Colors';
 
 
 const Drawer = createDrawerNavigator();

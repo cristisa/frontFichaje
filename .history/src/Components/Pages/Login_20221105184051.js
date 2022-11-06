@@ -1,5 +1,4 @@
-import React from 'react';
-import { useReduce, useEffect } from 'react';
+import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
@@ -7,7 +6,6 @@ import { Colors } from '../../styles/Colors';
 
 
 export default function App() {
-
     return (
     <View style={styles.container}>
         <Image style= {styles.image}
@@ -37,15 +35,15 @@ export default function App() {
         <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>
         <StatusBar style="auto" />
         
-        <View className="alert-info">
+        <View className="alert alert-info">
             <Text style={styles.estado}>Validando...</Text>
         </View>
 
-        <View className="alert-danger">
+        <View className="alert alert-danger">
             <Text style={styles.estado}>No autenticado</Text>
         </View>
         
-        <View className="alert-success">
+        <View className="alert alert-success">
             <Text style={styles.estado}>Autenticado</Text>
         </View>
 
