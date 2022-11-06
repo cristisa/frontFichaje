@@ -1,27 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import BottomTab from './src/components/navigation/BottomTab';
-import ItemTable from './src/components/ItemTable';
-
-const Drawer = createDrawerNavigator();
+import DrawerNavigation from './src/components/navigation/DrawerNavigator';
+import { Image } from 'react-native';
+// import { MainStackNavigator } from './src/components/navigation/StackNavigator';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator
-      screenOptions={{
-        drawerStyle: {backgroundColor: '#EB5629'},
-        headerStyle: {backgroundColor: '#EB5629'},
-        headerTintColor: '#fff',
-        drawerActiveTintColor: '#fff',
-        drawerInactiveTintColor: '#fff',
-      }}>
-        <Drawer.Screen
-          name="Incidencias"
-          component={BottomTab}/>
-          <Drawer.Screen name="Item" component={ItemTable} />
-      </Drawer.Navigator>
+      <DrawerNavigation />
     </NavigationContainer>
   );
 }
