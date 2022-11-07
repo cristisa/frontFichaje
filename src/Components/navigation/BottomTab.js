@@ -1,10 +1,9 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeFichaje from '../Pages/HomeFichaje';
-import Calendar from '../Calendar';
+import Calendar from '../Pages/Calendar';
 import Icon from '@expo/vector-icons/Ionicons'
-import Incidence from '../Incidence';
-import ListRegisterF from '../ListRegisterF';
+import Incidence from '../Pages/Incidence';
 import { Colors } from '../../styles/Colors'
 
 const Tab = createBottomTabNavigator();

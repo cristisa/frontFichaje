@@ -1,6 +1,6 @@
 import { FlatList, Text, View, StyleSheet } from 'react-native';
 import * as React from 'react';
-import { ListRegisterF } from './ListRegisterF';
+import { ListRegisterF } from './List/ListRegisterF';
 
 export default function Calendar() {
   data=[
