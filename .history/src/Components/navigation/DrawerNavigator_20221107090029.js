@@ -4,7 +4,6 @@ import BottomTab from './BottomTab';
 import ItemTable from '../ItemTable';
 import DetailDay from '../DetailDay';
 import { Login } from '../Pages/Login';
-import Incidence from '../Incidence';
 
 const Drawer = createDrawerNavigator();
 
@@ -25,7 +24,7 @@ export default function DrawerNavigation() {
           />
           <Drawer.Screen name="Listado de empleados" component={ItemTable}/>
           <Drawer.Screen name="Detalle del día" component={DetailDay} />
-          <Drawer.Screen name="Incidencias" component={Incidence} />
+          <Drawer.Screen name="Incidencias" component={Incidencias} />
       </Drawer.Navigator>
   );
 }
