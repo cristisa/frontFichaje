@@ -22,16 +22,12 @@ export default function App() {
         <TextInput
         placeholder="pepito.perez@factoriaf5.org"
         style={styles.textInput}
-        value={email}
-        onChangeText={text => setEmail(text)}
         />
         <Text style= {styles.subTitle}>Contraseña</Text>
         <TextInput
         placeholder="Contraseña"
         style={styles.textInput}
         secureTextEntry={true}
-        value={password}
-        onChangeText={text => setPassword(text)}
         />
         
         <TouchableOpacity
@@ -48,7 +44,7 @@ export default function App() {
     
     );
     
-};
+    };
     
     
     const styles = StyleSheet.create({

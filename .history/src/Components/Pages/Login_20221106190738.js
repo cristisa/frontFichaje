@@ -7,8 +7,21 @@ import { Colors } from '../../styles/Colors';
 
 
 export default function App() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const userRef = useRef();
+    const errRef = useRef();
+
+    const [user, setUser] = useState(''); 
+    const [pwd, setPwd] = useState('');
+    const [errMsg, setErrMsg] = useState('');
+    const [success, setSuccess] = useState(false);
+   
+    useEffect(() => {
+        userRef.current.focus();
+    }, [])
+
+    useEffect(() => {
+        setErrMsg('');
+    }, [user, pws]);
 
     return (
     <View style={styles.container}>
@@ -18,20 +31,15 @@ export default function App() {
         <Text style= {styles.title}>PLATAFORMA DE FICHAJE</Text>
         
         <Text style= {styles.subTitle}>Usuario</Text>
-     
         <TextInput
         placeholder="pepito.perez@factoriaf5.org"
         style={styles.textInput}
-        value={email}
-        onChangeText={text => setEmail(text)}
         />
         <Text style= {styles.subTitle}>Contraseña</Text>
         <TextInput
         placeholder="Contraseña"
         style={styles.textInput}
         secureTextEntry={true}
-        value={password}
-        onChangeText={text => setPassword(text)}
         />
         
         <TouchableOpacity
@@ -40,7 +48,7 @@ export default function App() {
         >
         <Text style={styles.buttonText}>ENTRAR</Text>
         </TouchableOpacity>
-      
+        
         <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>
         <StatusBar style="auto" />
 
@@ -48,7 +56,7 @@ export default function App() {
     
     );
     
-};
+    };
     
     
     const styles = StyleSheet.create({

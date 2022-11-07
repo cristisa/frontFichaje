@@ -30,7 +30,7 @@ export default function App() {
         placeholder="Contraseña"
         style={styles.textInput}
         secureTextEntry={true}
-        value={password}
+        value={password}}
         onChangeText={text => setPassword(text)}
         />
         
@@ -48,7 +48,7 @@ export default function App() {
     
     );
     
-};
+    };
     
     
     const styles = StyleSheet.create({
