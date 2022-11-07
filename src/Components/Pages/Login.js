@@ -11,33 +11,28 @@ export const Login = ({ navigation }) => {
     return (
     <View style={styles.container}>
         <Image style= {styles.image}
-        source={image}
-        />
+        source={image} />
         <Text style= {styles.title}>PLATAFORMA DE FICHAJE</Text>
-        
-        <Text style= {styles.subTitle}>Usuario</Text>
-        <TextInput
-        placeholder="pepito.perez@factoriaf5.org"
-        style={styles.textInput}
-        />
-        <Text style= {styles.subTitle}>Contraseña</Text>
-        <TextInput
-        placeholder="Contraseña"
-        style={styles.textInput}
-        secureTextEntry={true}
-        />
-        
-        <TouchableOpacity
-        onPress={()=> Alert.alert('Hola!')}
-        style={styles.button}
-        >
-        <Text 
-        style={styles.buttonText} 
-        onPress={() => navigation.navigate("Home")}>ENTRAR</Text>
-        </TouchableOpacity>
-        
-        <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>
-        <StatusBar style="auto" />
+            <Text style= {styles.subTitle}>Usuario</Text>
+            <TextInput
+            placeholder="pepito.perez@factoriaf5.org"
+            style={styles.textInput} />
+            <Text style= {styles.subTitle}>Contraseña</Text>
+            <TextInput
+            placeholder="Contraseña"
+            style={styles.textInput}
+            secureTextEntry={true} />
+            
+            <TouchableOpacity
+            onPress={()=> Alert.alert('Hola!')}
+            style={styles.button} >
+            <Text 
+            style={styles.buttonText} 
+            onPress={() => navigation.navigate("Home")}>ENTRAR</Text>
+            </TouchableOpacity>
+            
+            <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>
+            <StatusBar style="auto" />
         
         <View className="alert-info">
             <Text style={styles.estado}>Validando...</Text>
@@ -66,51 +61,57 @@ export const Login = ({ navigation }) => {
     alignItems: 'center',
     },
     image: {
-    marginTop: 90,
-    width:240,
-    height:120,
+    marginTop: 10,
+    width:180,
+    height:90,
     },
-    
-    title: { fontSize: 25, color: '#fff', paddingTop: 90, paddingBottom: 80},
-    
-    
+    title: { 
+    fontSize: 25, 
+    color: '#fff', 
+    paddingTop: 50, 
+    paddingBottom: 30
+    },
     subTitle: {
     fontSize: 20,
     color: '#000',
-    marginTop: 10,
-    paddingBottom: 5,
+    paddingTop: 25,
+    textAlign: 'center',
+    fontWeight: 'bold'
     },
-    
+    containerLogin:{
+    // backgroundColor: Colors.white,
+    // width: '80%',
+    // borderRadius: 25,
+    flex: 1,
+    alignItems: 'center'
+    },
     textInput: {
     borderWidth: 1,
     borderColor: '#ADADAD',
     padding: 10,
-    width: '80%' ,
+    width: '80%',
     marginTop: 10,
     borderRadius: 10,
     backgroundColor: '#EBEBEB',
     },
-    
     button: {
     backgroundColor: "#5870F6",
     padding: 10,
-    marginTop: 70,
+    marginTop: 45,
     width: '50%',
     borderRadius: 30,
     alignItems: 'center',
     },
-    
     buttonText: {
     color: '#fff',
-    fontSize: 25,
+    fontSize: 20,
     },
     
     recuperarContraseña: {
     color: Colors.white,
     fontSize: 18,
-    marginTop: 50,
+    marginTop: 30,
     },
-
     estado: {
         color: Colors.white,
         fontSize: 15,

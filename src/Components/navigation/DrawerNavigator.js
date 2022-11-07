@@ -4,6 +4,7 @@ import BottomTab from './BottomTab';
 import ItemTable from '../ItemTable';
 import DetailDay from '../DetailDay';
 import { Login } from '../Pages/Login';
+import FinFichaje from '../Pages/FinFichaje';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,13 +19,14 @@ export default function DrawerNavigation() {
         drawerInactiveTintColor: '#fff',
         headerTitle: '',
       }}>
-        <Drawer.Screen
-          name="Incidencias"
-          component={BottomTab}
+          <Drawer.Screen name="Login" component={Login} />
+          <Drawer.Screen
+            name="Incidencias"
+            component={BottomTab}
           />
           <Drawer.Screen name="Listado de empleados" component={ItemTable}/>
           <Drawer.Screen name="Detalle del día" component={DetailDay} />
-          <Drawer.Screen name="Login" component={Login} />
+          <Drawer.Screen name="Finalizar fichaje" component={FinFichaje} />
       </Drawer.Navigator>
   );
 }

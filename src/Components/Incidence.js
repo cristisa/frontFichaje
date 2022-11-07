@@ -56,7 +56,7 @@ export default function Incidence() {
       alignItems: 'center',
       marginLeft: 40,
       marginTop: 50,
-      borderRadius: 25,
+      borderRadius: 15,
       shadowColor: "#000",
       shadowOffset: {
         width: 0,
@@ -64,7 +64,6 @@ export default function Incidence() {
       },
       shadowOpacity: 0.34,
       shadowRadius: 6.27,
-
       elevation: 10,
     },
     incidence_containercomment:{

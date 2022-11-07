@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   table: {
     backgroundColor: '#EBEBEB',
     height: 70,
-    borderRadius: 25,
+    borderRadius: 15,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
