@@ -1,16 +1,18 @@
 import React from 'react';
+import { useReduce, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
 import { Colors } from '../../styles/Colors';
 
 
-export const Login = () => {
+export const Login = ({ navigation }) => {
 
     return (
     <View style={styles.container}>
         <Image style= {styles.image}
-        source={image} />
+        source={image}
+        />
         <Text style= {styles.title}>PLATAFORMA DE FICHAJE</Text>
         
         <Text style= {styles.subTitle}>Usuario</Text>
@@ -31,7 +33,7 @@ export const Login = () => {
         >
         <Text 
         style={styles.buttonText} 
-        >ENTRAR</Text>
+        onPress={() => navigation.navigate("Home")}>ENTRAR</Text>
         </TouchableOpacity>
         
         <Text style= {styles.recuperarContraseña}> Recuperar Contraseña</Text>
@@ -51,57 +53,51 @@ export const Login = () => {
     alignItems: 'center',
     },
     image: {
-    marginTop: 10,
-    width:180,
-    height:90,
+    marginTop: 90,
+    width:240,
+    height:120,
     },
-    title: { 
-    fontSize: 25, 
-    color: '#fff', 
-    paddingTop: 50, 
-    paddingBottom: 30
-    },
+    
+    title: { fontSize: 25, color: '#fff', paddingTop: 90, paddingBottom: 80},
+    
+    
     subTitle: {
     fontSize: 20,
     color: '#000',
-    paddingTop: 25,
-    textAlign: 'center',
-    fontWeight: 'bold'
+    marginTop: 10,
+    paddingBottom: 5,
     },
-    containerLogin:{
-    // backgroundColor: Colors.white,
-    // width: '80%',
-    // borderRadius: 25,
-    flex: 1,
-    alignItems: 'center'
-    },
+    
     textInput: {
     borderWidth: 1,
     borderColor: '#ADADAD',
     padding: 10,
-    width: '80%',
+    width: '80%' ,
     marginTop: 10,
     borderRadius: 10,
     backgroundColor: '#EBEBEB',
     },
+    
     button: {
     backgroundColor: "#5870F6",
     padding: 10,
-    marginTop: 45,
+    marginTop: 70,
     width: '50%',
     borderRadius: 30,
     alignItems: 'center',
     },
+    
     buttonText: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: 25,
     },
     
     recuperarContraseña: {
     color: Colors.white,
     fontSize: 18,
-    marginTop: 30,
+    marginTop: 50,
     },
+
     estado: {
         color: Colors.white,
         fontSize: 15,
