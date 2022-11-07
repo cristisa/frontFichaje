@@ -23,6 +23,7 @@ export default function DrawerNavigation() {
         headerTitle: '',
       }}>
         <Drawer.Screen name="Login" component={Login}/>
+        <Drawer.Screen name="Perfil" component={Profile}/>
         <Drawer.Screen
           name="Incidencia"
           component={BottomTab}
