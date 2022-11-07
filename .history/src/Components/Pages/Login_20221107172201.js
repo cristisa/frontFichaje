@@ -39,7 +39,7 @@ export const Login = () => {
         />
         
         <TouchableOpacity
-        onPress={handleLogin}
+        onPress={()=> Alert.alert('Hola!')}
         style={styles.button}
         >
         <Text 

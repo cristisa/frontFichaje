@@ -1,8 +1,7 @@
 import { FlatList, Text, View } from 'react-native';
 import * as React from 'react';
-import { Item } from '../Components/Item';
-import { StylesApp } from '../styles/StylesApp';
-import BottomTab from './navigation/BottomTab';
+import { Item } from './Item/Item';
+import { StylesApp } from '../../styles/StylesApp';
 
 export default function ItemTable() {
   data=[

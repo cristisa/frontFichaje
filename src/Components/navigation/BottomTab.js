@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../Pages/Home';
-import Calendar from '../Calendar';
+import HomeFichaje from '../Pages/HomeFichaje';
+import Calendar from '../Pages/Calendar';
 import Icon from '@expo/vector-icons/Ionicons'
-import Incidence from '../Incidence';
-import {Colors} from '../../styles/Colors';
+import Incidence from '../Pages/Incidence';
+import { Colors } from '../../styles/Colors'
 
 const Tab = createBottomTabNavigator();
 
@@ -23,7 +23,7 @@ const BottomTab = () => {
                     case 'Clock':
                         iconName = focused ? 'time' : 'time';
                         break;
-                    case 'Home':
+                    case 'HomeFichaje':
                         iconName = focused ? 'home' : 'home';
                         break;
                     case 'Calendar':
@@ -34,7 +34,7 @@ const BottomTab = () => {
             }
         })}>
             <Tab.Screen name='Clock' component={Incidence} />
-            <Tab.Screen name='Home' component={Home} />
+            <Tab.Screen name='HomeFichaje' component={HomeFichaje} />
             <Tab.Screen name='Calendar' component={Calendar} />
         </Tab.Navigator>
     )

@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
@@ -11,8 +11,7 @@ export const Login = () => {
     const [password, setPassword] = useState("");
 
     const handleLogin = (e) => {
-        e.preventDefault();
-        alert(`${email}, ${password}`);
+        email.preventDefault();
     };
 
     return (
@@ -39,7 +38,7 @@ export const Login = () => {
         />
         
         <TouchableOpacity
-        onPress={handleLogin}
+        onPress={()=> Alert.alert('Hola!')}
         style={styles.button}
         >
         <Text 
