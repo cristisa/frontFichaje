@@ -11,7 +11,7 @@ export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     //const [, navigate] = useLocation();
-    //const {login, isLogged} = useUser();
+    const {login, isLogged} = useUser();
     
     // useEffect(() => {
     //     if (isLogged) navigate('/')

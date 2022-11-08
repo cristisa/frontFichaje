@@ -1,26 +1,17 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
 import { Colors } from '../../styles/Colors';
-//import useUser from '../.././hooks/useUser';
-//import {useLocation} from "wouter";
+import useUser from '../.././hooks/useUser';
 
 export const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    //const [, navigate] = useLocation();
-    //const {login, isLogged} = useUser();
-    
-    // useEffect(() => {
-    //     if (isLogged) navigate('/')
-    // }, [isLogged, navigate])
-    
-    
+
     const handleLogin = (e) => {
         e.preventDefault();
-       // login({email, password});
         alert(`${email}, ${password}`);
     };
 

@@ -5,11 +5,15 @@ export const Item = ({item}) => {
     return (
         <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
             <Text style={{fontSize: 16}}>{item.key}</Text>
-            <View style={{flex:1, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-end'}}>
-             
+            <View style={{flex:1, flexDirection: 'row-reverse'}}>
+                <AppButton 
+                    onPress={() => Alert.alert('Asignar')}
+                    title='Asignar'
+                    styles={styles.btn1} 
+                />
                 <AppButton 
                     onPress={() => Alert.alert('Fichajes')}
-                    title='Ver Fichajes'
+                    title='Fichajes'
                     styles={styles.btn2} 
                 />
             </View>
@@ -18,24 +22,29 @@ export const Item = ({item}) => {
 };
 
 const styles = StyleSheet.create({
-    
-    btn3: {
+    btn1: {
+        backgroundColor: 'red',
+        color: 'white',
+        paddingLeft: 5,
+        paddingRight: 5,
+        marginLeft: 5,
+      },
+      btn3: {
         backgroundColor: '#5870F6',
         color: 'white',
         paddingLeft: 5,
         paddingRight: 5,
         marginLeft: 5,     
-    },
-    btn2:{
-        backgroundColor: '#5870F6',
+      },
+      btn2:{
+        backgroundColor: '#F66262',
         color: '#fff',
         borderRadius: 25,
-        paddingTop: 15,
+        paddingTop: 20,
         paddingLeft: 33,
-        paddingBottom: 15,
-        marginTop: 15,
-        marginRight: 15,
-        width: '53%',
+        paddingBottom: 20,
+        marginTop: 20,
+        width: '43%',
         fontWeight: 'bold',
         shadowColor: "#000",
         shadowOffset: {
@@ -44,6 +53,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
+  
         elevation: 5,
       }
       

@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Alert, TextInput } from 'react-native';
 import image from '../../../assets/logo.png';
 import { Colors } from '../../styles/Colors';
-//import useUser from '../.././hooks/useUser';
+import useUser from '../.././hooks/useUser';
 //import {useLocation} from "wouter";
 
 export const Login = () => {
@@ -11,7 +11,7 @@ export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     //const [, navigate] = useLocation();
-    //const {login, isLogged} = useUser();
+    const {login, isLogged} = useUser();
     
     // useEffect(() => {
     //     if (isLogged) navigate('/')
