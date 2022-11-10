@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Loading } from './src/clases/common';
-import Auth from './src/screens/Auth';
-import LoggedIn from './src/screens/LoggedIn';
-import deviceStorage from './src/services/deviceStorage';
+mport React, { Component } from 'react';
+import { Loading } from './components/common/';
+import Auth from './screens/Auth';
+import LoggedIn from './screens/LoggedIn';
+import deviceStorage from './services/deviceStorage.js';
 
 export default class App extends Component {
   constructor() {

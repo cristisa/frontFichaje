@@ -5,7 +5,7 @@ export const Item = ({item}) => {
     return (
         <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
             <Text style={{fontSize: 16}}>{item.key}</Text>
-            <View style={{flex:1, flexDirection: 'row', justifyContent: 'flex-end'}}>
+            <View style={{flex:1, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-end'}}>
              
                 <AppButton 
                     onPress={() => Alert.alert('Fichajes')}
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         paddingTop: 15,
         paddingBottom: 15,
-        paddingLeft: 30,
         marginTop: 15,
+        marginRight: 5,
         width: '53%',
         fontWeight: 'bold',
         shadowColor: "#000",
