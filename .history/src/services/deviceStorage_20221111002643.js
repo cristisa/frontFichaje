@@ -40,7 +40,7 @@ const deviceStorage = {
         }
       );
     } catch (error) {
-      console.log('Storage Error: ' + error.message);
+      console.log('AsyncStorage Error: ' + error.message);
     }
   }
 };
